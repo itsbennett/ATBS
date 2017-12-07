@@ -40,5 +40,3 @@ for v in eggs.values():
 # assigns the values of the keys to "v" and prints
 
 for k, v in eggs.items():
-
-# add
