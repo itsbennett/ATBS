@@ -3,6 +3,8 @@
 
 [Video course](https://www.udemy.com/automate/learn/v4)
 
+*Note: I think most of this is done in Python 3, as such, Python 2 syntax will likely not work.*
+
 <!-- [Visualizer](https://pythontutor.com/) 
 Depreciated -->
 
@@ -270,3 +272,34 @@ True
 # Lecture 6
 ## `while` Loops
 - You can make a block of code execute over and over again so long as the condition(s) in the `while` statement are met.
+
+```python
+spam = 0
+while spam < 5:
+  print('Hello world!')
+  spam = spam + 1 
+```
+Output:
+```
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+```
+- This outputs the way it does because `spam` is given a value of zero. The block
+```python
+print('Hello world!')
+spam = spam + 1
+```
+- gets repeated until the `while` statement is no longer True. 
+- Once `spam` is equal to `5`, the code ends and no more outputs are given.
+
+```python
+name =''
+while name != 'your name':
+  print('Please type your name.')
+  name = input()
+print('Thank you!')
+```
+- As long as the input given is not `your name`, it will continue to repeatedly ask for the input until the correct one is given.
