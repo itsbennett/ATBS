@@ -12,21 +12,27 @@ Depreciated -->
 ## Expressions, Data Types and Variables
 - **Expressions** consist of **values** and **operators.** 
   - Expressions = Values + Operators
-
-Example:
-```python
-2 + 2 = 4
-```
-
 - Python follows the order of operations.
 
 Example:
- ```python
-  2 + 3 * 6 = 20
-```
-would be a different output than:
 ```python
-  (2 + 3) * 6 = 30
+  2 + 3 * 6
+```
+Output:
+```
+>>>
+20
+>>>
+```
+Where as:
+```python
+  (2 + 3) * 6
+```
+Output:
+```
+>>>
+30
+>>>
 ```       
   - A visualization tool can be found [here](https://automatetheboringstuff.com/eval/2-1.html)
 
@@ -36,19 +42,37 @@ would be a different output than:
 - **Variables** hold values.
   ```python
   spam = 42
+  spam
+  ```
+  Output:
+  ```
+  >>>
+  42
+  >>>
   ```
    - Typing `spam` will print 42.
     - Once your variable has been reassigned, it will take the value last given to it.
     - This is called **overwriting** the variable.
+  ```python
+  spam = 42
+  spam + 1
+  spam
+  ```
+  Output:
+  ```
+  >>>
+  43
+  >>>
+  ```
 
 - If a Python instruction evaluates to a single value, it's an **expression**. Otherwise, it's a **statement**.
 
 ## Recap:
   - Expressions = Values + Operators
   - Int, Float, String
-  - 'Hello World'
-  - spam = 42
-  - spam + 1
+  - `'Hello World'`
+  - `spam = 42`
+  - `spam + 1`
 
 # Lecture 3
 ## Writing Our First Program
@@ -147,7 +171,12 @@ myAge = 26
 myPet = 'cat'
 myAge > 20 and myPet == 'cat'
 ```
-`Output: True`
+Output:
+```
+>>>
+True
+>>>
+```
 
 ## Recap: 
 - Boolean data type: `True`, `False`.
@@ -158,13 +187,19 @@ myAge > 20 and myPet == 'cat'
 # Lecture 5
 ## Else, If, Elif Statements
 - `if` Statements:
-  - Ex: 
-  ```python
-            if name == 'Alice':
-              print('Hi, Alice')
-            print('Done')
-  ```
-  - If in the example *Alice* were another name, it would just print *Done*.
+```python
+if name == 'Alice':
+  print('Hi, Alice')
+  print('Done')
+```
+- Output:
+```
+>>> 
+Hi, Alice
+Done
+>>>
+```
+- If in the example *Alice* were another name, it would just print *Done*.
 - Conditions and expressions are the same thing
 - A block is made up of lines of code that are at the same level.
 - Clauses and blocks are the same thing.
@@ -172,3 +207,9 @@ myAge > 20 and myPet == 'cat'
 - `else` Statements:
 - Code will run specifically when a condition is false using an `else` statement.
 ```python
+password = 'swordfish'
+if password == 'swordfish'
+  print('Access granted.')
+else: 
+  print('Wrong password.')
+  ```
