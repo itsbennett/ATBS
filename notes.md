@@ -3,6 +3,9 @@
 
 [Video course](https://www.udemy.com/automate/learn/v4)
 
+<!-- [Visualizer](https://pythontutor.com/) 
+Depreciated -->
+
 *This course doesn't focus on Computer Science subjects*
 
 # Lecture 2
@@ -27,7 +30,7 @@
 
 - If a Python instruction evaluates to a single value, it's an **expression**. Otherwise, it's a **statement**.
 
-- Recap:
+## Recap:
   - Expressions = Values + Operators
   - Int, Float, String
   - 'Hello World'
@@ -52,7 +55,7 @@
   - Intergers cannot be added to strings, such as `27 + ' years old.'`. This will also return a syntax error.
   - An interactive demo of this is found [here](https://automatetheboringstuff.com/eval/3-4.html).
 
-- Recap: 
+## Recap: 
   - Type programs into the file editor (you are now).
   - The execution statrs at the top and moves down.
   - `#` Comments are ignored by Python.
@@ -61,3 +64,70 @@
   - `input()` lets user type in a value.
   - `len()` takes a string value and returns an integer value of the string's length
   - `int()`, `str()`, and `float()` convert values' data type.
+
+# Lecture 4
+## Flow Charts and Basic Flow Concepts
+- A flow chart diagram can be found in [this video](https://www.udemy.com/automate/learn/v4/t/lecture/3465802?start=0).
+- Flow control statements are instructions that decides what Python instructions to execute under which conditions.
+  - Yes/No options represented by:
+    - **Boolean values**
+    - **Comparison operators**
+    - **Boolean operators**
+- Boolean data types have two values: *true* or *false*.
+- Boolean values can be stored in variables.
+  - Ex: `varName = True`
+    - Note: These values **must** be written as such: `True, False`. Any other way to stylize will not work, such as `TRUE`, `false`, or `'True'`.
+
+- Comparison operators are used in expressions just like a plus or minus.
+- There are six comparison operators:
+  - `==` equal to
+  - `!=` not equal to
+  - `<` less than
+  - `>` greater than
+  - `<=` less than or equal to
+  - `>=` greater than or equal to
+- `42==42` will output the boolean value `True`.
+- `42 == 'Hello` will output the boolean value `False`.
+- When you have a variable assigned to a value, you can compare it to another value that will output a boolean.
+  - Ex: `myAge = 26` and compared with `myAge < 30` will output `True`.
+  - The value that the variable has assigned to it when used with a comparison operator must be the same value type. If an interger is compared to a string, regardless if it is the same, it will return `False` because the *string* is not an *interger*.
+  - The exception to this rule is *float values* **can** be equal to an *interger*.
+  - If one part of the expression is False, the entire expression will evaluate to `False`.
+
+## The `and` Operator's Truth Table
+- `True` and `True` evalutes to: `True`
+- `True` and `False` evalutes to: `False`
+- `False` and `True` evalutes to: `False`
+- `False` and `False` evalutes to: `False`
+
+- The `or` operator is essentially the exact opposite. 
+
+## The `or` Operator's Truth Table
+- `True` or `True` evalutes to: `True`
+- `True` or `False` evalutes to: `True`
+- `False` or `True` evalutes to: `True`
+- `False` or `False` evalutes to: `False`
+
+- The `not` operator evalutes to the opposite boolean value. It only operators on **one** boolean value.
+
+## The `not` Operator's Truth Table
+- `not True` evalutes to: `False`
+- `not False` evalutes to: `True`
+
+- Ex: 
+`myAge = 26`
+`myPet = 'cat'`
+`myAge > 20 and myPet == 'cat'`
+Output: `True`
+
+## Recap: 
+- Boolean data type: `True`, `False`.
+- Comparison operators: `==`, `!=`, `<`, `>`, `<=`, `>=`.
+- `==` is a *comparison*, `=` is an *assignment*.
+- Boolean operators: `and`, `or`, `not`.
+
+# Lecture 5
+## Else, If, Elif Statements
+- `if` Statements:
+- Conditions and expressions are the same thing
+- 
