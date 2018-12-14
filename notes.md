@@ -12,19 +12,32 @@ Depreciated -->
 ## Expressions, Data Types and Variables
 - **Expressions** consist of **values** and **operators.** 
   - Expressions = Values + Operators
-  - Ex: `2 + 2 = 4`
+
+Example:
+```python
+2 + 2 = 4
+```
 
 - Python follows the order of operations.
-  - Ex: `2 + 3 * 6 = 20`
-  - Ex: `(2 + 3) * 6 = 30`
+
+Example:
+ ```python
+  2 + 3 * 6 = 20
+```
+would be a different output than:
+```python
+  (2 + 3) * 6 = 30
+```       
   - A visualization tool can be found [here](https://automatetheboringstuff.com/eval/2-1.html)
 
 - **Integers** are also called "*ints*" and **floating points** are called "*floats*".
   - Ex: 42 is an *interger* while *42.0* is a float.
 
 - **Variables** hold values.
-  - Ex: `spam = 42`
-    - Typing `spam` will print 42.
+  ```python
+  spam = 42
+  ```
+   - Typing `spam` will print 42.
     - Once your variable has been reassigned, it will take the value last given to it.
     - This is called **overwriting** the variable.
 
@@ -44,15 +57,29 @@ Depreciated -->
   - This is useful for segmenting certain parts of programs.
 - Values and arguments are the same thing and used interchangably. 
 - `input()` waits for the user to give the variable a value. 
-  - Ex: varName = `input()`
+```python
+varName = input()
+```
 - The `(len(var))` function prints out the number of characters in a string.
 - `str, int` and `float` return string, interger and floating data types respectively.
-  - Ex: `str(26)` will make 26 a string data type.
-  - To specifically specify it as an interger, you could type `int('26')` and it would then treat it as an interger.
+  
+  Example:
+  ```python
+  str(26)
+  ```
+  will make 26 a string data type.
+  ```python
+  int(26)
+  ```
+  will make 26 an interger.
   - Floating point values can be assigned using `float()`.
   - This is particularly useful when using `input()` as anything that is input by the user via this argument would be treated as a **string**.
   - If the desired outcome from `input()` is a string, the varName given must be written int(varName) to be treated as such, otherwise you will be given a syntax error.
-  - Intergers cannot be added to strings, such as `27 + ' years old.'`. This will also return a syntax error.
+  - Intergers cannot be added to strings, such as
+  ```python 
+  27 + ' years old.'. 
+  ```
+  This will also return a syntax error.
   - An interactive demo of this is found [here](https://automatetheboringstuff.com/eval/3-4.html).
 
 ## Recap: 
@@ -114,7 +141,7 @@ Depreciated -->
 - `not True` evalutes to: `False`
 - `not False` evalutes to: `True`
 
-- Ex:
+Example: 
 ```python 
 myAge = 26
 myPet = 'cat'
@@ -137,6 +164,11 @@ myAge > 20 and myPet == 'cat'
               print('Hi, Alice')
             print('Done')
   ```
+  - If in the example *Alice* were another name, it would just print *Done*.
 - Conditions and expressions are the same thing
+- A block is made up of lines of code that are at the same level.
 - Clauses and blocks are the same thing.
-- 
+
+- `else` Statements:
+- Code will run specifically when a condition is false using an `else` statement.
+```python
