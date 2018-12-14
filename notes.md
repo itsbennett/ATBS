@@ -20,9 +20,7 @@ Example:
 ```
 Output:
 ```
->>>
 20
->>>
 ```
 Where as:
 ```python
@@ -30,9 +28,7 @@ Where as:
 ```
 Output:
 ```
->>>
 30
->>>
 ```       
   - A visualization tool can be found [here](https://automatetheboringstuff.com/eval/2-1.html)
 
@@ -46,9 +42,7 @@ Output:
   ```
   Output:
   ```
-  >>>
   42
-  >>>
   ```
    - Typing `spam` will print 42.
     - Once your variable has been reassigned, it will take the value last given to it.
@@ -60,9 +54,7 @@ Output:
   ```
   Output:
   ```
-  >>>
   43
-  >>>
   ```
 
 - If a Python instruction evaluates to a single value, it's an **expression**. Otherwise, it's a **statement**.
@@ -173,9 +165,7 @@ myAge > 20 and myPet == 'cat'
 ```
 Output:
 ```
->>>
 True
->>>
 ```
 
 ## Recap: 
@@ -187,17 +177,16 @@ True
 # Lecture 5
 ## Else, If, Elif Statements
 - `if` Statements:
+
 ```python
 if name == 'Alice':
   print('Hi, Alice')
   print('Done')
 ```
-- Output:
-```
->>> 
+Output:
+``` 
 Hi, Alice
 Done
->>>
 ```
 - If in the example *Alice* were another name, it would just print *Done*.
 - Conditions and expressions are the same thing
@@ -213,3 +202,71 @@ if password == 'swordfish'
 else: 
   print('Wrong password.')
   ```
+  - If the condition is true, then the `if` block is executed and the `else` block is skipped.
+  - Only **one** of the blocks will be executed.
+  
+  - `elif` statements
+  ```python
+name = 'Bob'
+age = 3000
+if name == 'Alice':
+    print('Hi Alice')
+elif age < 12:
+    print('You are not Alice, kiddo.')
+elif age > 2000:
+    print('Unlike you, Alice is not an unded, immortal vampire.')
+elif age > 100:
+    print('You are not Alice, grannie.')
+  ```
+  Output:
+  ```
+  Unlike you, Alice is not an undead, immortal vampire.
+  ```
+- An `else` statement can be appended to the end of an `elif` statement.
+
+```python
+print('Enter a name.')
+name = input()
+if name:
+  print('Thank you for entering a name.')
+else:
+  print('You did not enter a name.')
+```
+
+- While this code works, you would want to write something more along the lines of:
+```python
+if name != '':
+```
+- For intergers, the value 0 is a **falsey** value, everything else is **truthy**.
+- 0.0 for float is **falsey**, all others are **truthy**.
+
+Falsey:
+```python
+bool(0)
+bool('')
+```
+Output
+```
+False
+```
+
+Truthy:
+```python
+bool(42)
+bool('Hello')
+```
+
+Output
+```
+True
+```
+
+## Recap
+- An `if` statement can be used to conditionally execute code depending on whether the statement is True or False.
+- An `elif` ("else if") statement can follow an `if` statement. Its block executes if its condition is True and all previous conditions have been False.
+- An `else` statement comes **at the end**. Its block is executed if all of hte previous conditions have been False.
+- The values 0, 0.0 and the empty string are considered to be Falsey values. When used in conditions they are considered False. You can always see for yourself which values are Truthy or Falsey by passing them to the `bool()` function.
+
+# Lecture 6
+## `while` Loops
+- You can make a block of code execute over and over again so long as the condition(s) in the `while` statement are met.
