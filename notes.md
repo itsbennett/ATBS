@@ -129,5 +129,10 @@ Output: `True`
 # Lecture 5
 ## Else, If, Elif Statements
 - `if` Statements:
+  - Ex: ```python
+            if name == 'Alice':`
+              `print('Hi, Alice')
+        ```
 - Conditions and expressions are the same thing
+- Clauses and blocks are the same thing.
 - 
