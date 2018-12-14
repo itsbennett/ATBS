@@ -114,11 +114,13 @@ Depreciated -->
 - `not True` evalutes to: `False`
 - `not False` evalutes to: `True`
 
-- Ex: 
-`myAge = 26`
-`myPet = 'cat'`
-`myAge > 20 and myPet == 'cat'`
-Output: `True`
+- Ex:
+```python 
+myAge = 26
+myPet = 'cat'
+myAge > 20 and myPet == 'cat'
+```
+`Output: True`
 
 ## Recap: 
 - Boolean data type: `True`, `False`.
@@ -131,8 +133,9 @@ Output: `True`
 - `if` Statements:
   - Ex: 
   ```python
-            if name == 'Alice':`
-              `print('Hi, Alice')
+            if name == 'Alice':
+              print('Hi, Alice')
+            print('Done')
   ```
 - Conditions and expressions are the same thing
 - Clauses and blocks are the same thing.
