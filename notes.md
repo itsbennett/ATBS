@@ -303,3 +303,6 @@ while name != 'your name':
 print('Thank you!')
 ```
 - As long as the input given is not `your name`, it will continue to repeatedly ask for the input until the correct one is given.
+- Loops are useful for having a user provide a valid kind of input for the data type you are trying to get. If you ask a user their age and they type in something that isn't numerical, a loop can force them to keep entering data until it satisfies the call.
+
+- **Infinite Loops** can be quit using `ctrl+c`.
